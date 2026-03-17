@@ -6,7 +6,6 @@
 </head>
 
 <body>
-
 <h1>🌍 Public Notes Board</h1>
 
 <form method="POST">
@@ -15,13 +14,11 @@
 </form>
 
 <div class="notes">
-
 {% for note in notes %}
-<div class="note">
-{{ note[1] }}
-</div>
+  <div class="note">
+    {{ note.content }}
+  </div>
 {% endfor %}
-
 </div>
 
 </body>
